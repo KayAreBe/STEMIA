@@ -1,0 +1,45 @@
+<app-header></app-header>
+<div class="zwa">
+    <img src="assets\grp\logggg.jfif" alt="">
+
+<div class="home vh-100">
+    <section id="section">
+        <div class="login-wrapper">
+            <div class="card">
+                <div class="card-body">
+                    <form class="form-signin" [formGroup]="alogin" (ngSubmit)="onSubmit()" autocomplete="off">
+                        <div class="mb-3">
+                            <h1 class="h3 mb-3 font-weight-normal" style="text-align: center;">Admin Login</h1>
+
+                            <label for="exampleInputEmail1" class="form-label">Username</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" formControlName="email"
+                                aria-describedby="emailHelp" required autofocus ngModel>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password"
+                                required ngModel>
+                        </div>
+
+                        <div class="col-md-8">
+                            <div *ngIf="password.touched && password.errors" class="errorMessage">
+                                <span *ngIf="password.hasError('required')" style="color: red;"> Password is
+                                    required.</span>
+                                <span *ngIf="password.hasError('maxlength')" style="color: red;"> Only 10 characters
+                                    allowed for password.</span>
+                                <span *ngIf="password.hasError('minlength')" style="color: red;"> Atleast 5
+                                    characters needed for password.</span>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button (click)="loginSubmit(alogin.value)" class="btn btn-primary" [disabled]="alogin.invalid">Login</button>
+                            <br>
+                            <p> Learner <a routerLink="/login" href="#"> Login </a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</div>

@@ -1,0 +1,33 @@
+<app-header></app-header>
+<div class="container mt-5">
+    <h1>
+        Learner information
+    </h1>
+    <a routerLink="/dashboard" class="btn btn-sm btn-primary mb-3">Back</a>
+    <br>
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Fullname</th>
+            <th scope="col">Age</th>
+            <th scope="col">Email</th>
+            <th scope="col">School</th>
+            <th scope="col">Grade</th>
+            <th scope="col">Password</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let us of readData">
+            <th scope="row">{{us.userId}}</th>
+            <td>{{us.fullname}}</td>
+            <td>{{us.age}}</td>
+            <td>{{us.email}}</td>
+            <td>{{us.school}}</td>
+            <td>{{us.grade}}</td>
+            <td>{{us.password}}</td>
+          </tr>
+          
+        </tbody>
+      </table>
+</div>

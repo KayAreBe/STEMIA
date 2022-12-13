@@ -1,0 +1,80 @@
+.card,
+.login-wrapper
+{
+    background-color:black;
+}
+.text-center a{
+    color: blue;
+}
+.text-center button
+{
+    font-size: 27px;
+    width: 40%;
+
+}
+
+.home{
+   
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position:absolute;
+    top: 25%;
+    left: 38%;
+    z-index: 2;
+    height: 100%;
+}
+.text-center
+{
+    font-size: 25px;
+}
+.h3
+{
+    font-size: 35px;
+}
+.form-label
+{
+    font-size: 25px;
+}
+.form-control
+{
+    background-color: rgb(107, 103, 103);
+}
+.card-body,
+.form-signin
+{
+    background-color:white;
+}
+
+.home::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: center;
+    background: rgba(26, 26, 75, 0.8);
+    z-index: -1;
+}
+.login-wrapper{
+    margin: 10rem auto;
+    width: 30rem;
+    height: 70%;
+}
+section {
+    padding-top: 20px;
+}
+.col-md-8 span
+{
+    font-size: 30px;
+}
+.mb-3 input
+{
+    color: aliceblue;
+    font-size: 20px;
+}
+.zwa img
+{
+   
+    
+    width: 1900px;
+    height: 900px;
+}

@@ -1,0 +1,50 @@
+.ccontainer
+{
+   width: 800px;
+   max-width: 80%;
+    background-color: rgb(19, 140, 247);
+    border-radius: 5%;
+    padding: 10%;
+    box-shadow: 0 0 10px 2px;
+}
+.btn-grid
+{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+.btn
+{
+    --hue:var(--hue--newtral);
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background-color: rgb(207, 129, 10);
+    border-radius: 5px;
+    padding: 5px 10px;
+    outline: white;
+    cursor: pointer;
+}
+.btn:hover
+{
+    background-color: black;
+    color: white;
+}
+.start-btn,
+.next-btn
+{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.control
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide
+{
+    display: none;
+}

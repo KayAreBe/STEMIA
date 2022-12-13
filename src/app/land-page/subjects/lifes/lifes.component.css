@@ -1,0 +1,65 @@
+section
+{
+    margin: 50px;
+    /* background-color: black; */
+    height: 90vh;
+}
+.lion
+{
+    height: 550px;
+    width: 550px;
+    float: left;
+    margin: 40px;
+    shape-outside: circle();
+    position: cover;
+}
+
+.lion img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.tiger
+{
+    height: 300px;
+    width: 300px;
+    float:right;
+    margin: 30px;
+    shape-outside: circle();
+
+}
+.sihle
+{
+    position: absolute;
+    top: 79%;
+    left: 50%;
+    
+}
+.sihle img
+{
+    
+    border-radius: 10%;
+}
+
+.tiger img
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+h2{
+    color:black;
+    font-size: 40px;
+    margin-bottom: 15px;
+    text-align: center;
+
+}
+
+p{
+    color: black;
+}
+
+

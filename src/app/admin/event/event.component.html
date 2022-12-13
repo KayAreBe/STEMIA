@@ -1,0 +1,39 @@
+<app-header></app-header>
+<div class="container mt-5">
+    <h1>
+        Events Management
+    </h1>
+    <a routerLink="/create" class="btn btn-success mb-3">Create</a>
+    &nbsp;
+    <a routerLink="/event" class="btn btn-primary mb-3">Read</a>
+    <br>
+
+    <div *ngIf="successmsg" class="mt-2 alert alert-success alert-dismissible fade show" role="alert">
+      <strong>{{successmsg}}</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Event</th>
+            <th scope="col">Description</th>
+            <th scope="col">Edits</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let us of readData">
+            <th scope="row">{{us.eventId}}</th>
+            <td>{{us.eventName}}</td>
+            <td>{{us.description}}</td>
+            <td>
+                <button class="btn btn-sm btn-danger" (click)="deleteID(us.eventId) " >Delete</button>
+                &nbsp;
+                <a class="btn btn-sm btn-success" [routerLink]="['/create',us.eventId]">Update</a>
+            </td>
+          </tr>
+          
+        </tbody>
+      </table>
+</div>

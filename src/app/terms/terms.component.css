@@ -1,0 +1,13 @@
+.container
+{
+    background-color: aliceblue;
+    width:25%;
+    height: 80%;
+    border-radius: 10%;
+    position: sticky;
+    top: 25%;
+}
+section {
+    padding-top: 300px;
+    padding-bottom: 300px;
+}

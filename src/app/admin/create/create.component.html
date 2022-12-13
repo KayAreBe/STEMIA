@@ -1,0 +1,37 @@
+<app-header></app-header>
+<div class="container mt-5">
+    <h1>
+        Events Management
+    </h1>
+    <a routerLink="/create" class="btn btn-success">Create</a>
+    &nbsp;
+    <a routerLink="/event" class="btn btn-primary">Read</a>
+
+    <div *ngIf="errormsg" class="mt-2 alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>{{errormsg}}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <div *ngIf="successmsg" class="mt-2 alert alert-success alert-dismissible fade show" role="alert">
+        <strong>{{successmsg}}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+    <form [formGroup]="eventForm"  >
+        <div class="col-lg-4 mt-2">
+            <input type="text" class="form-control" formControlName = "eventName" placeholder="Enter event">
+        </div>
+
+        <div class="col-lg-4 mt-2">
+            <input type="text" class="form-control" formControlName = "description" placeholder="Enter description">
+        </div>
+
+        <div class="col-lg-4 mt-2" *ngIf="!getparamid" (ngSubmit)="eventSubmit()">
+            <button class="btn btn-primary btn-sm">Create</button>
+        </div>
+
+        <div class="col-lg-4 mt-2" *ngIf="getparamid" (ngSubmit)="eventUpdate()">
+            <button class="btn btn-dark btn-sm">Update</button>
+        </div>
+    </form>
+</div>

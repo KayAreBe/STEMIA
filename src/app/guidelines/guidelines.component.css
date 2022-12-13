@@ -1,0 +1,16 @@
+.all
+{
+  background-color:  #88cdec;
+  height: 80vh;
+}
+.sihle
+{
+  background-color: whitesmoke;
+}
+.container 
+{
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  width: 1000px;
+}

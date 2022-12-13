@@ -1,0 +1,61 @@
+
+/* .all
+{
+    background-color:  #88cdec;
+    height: 80vh;
+}
+.container p
+{
+    font-size: large;
+} */
+
+
+/* .sihle
+{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+} */
+
+.about-section
+{
+    background: url(src\assets\grp\yyy.png) no-repeat left;
+    background-size: 58%;
+    background-color: rgb(5, 44, 78);
+    overflow: hidden;
+    padding: 100px;
+}
+
+.inner-container
+{
+    width: 55%;
+    float: right;
+    background-color: aliceblue;
+    padding: 150px;
+}
+
+.inner-container h1{
+
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.text
+{
+    font-size: 25px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+
+}
+
+.skills
+{
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}

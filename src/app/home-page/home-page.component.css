@@ -1,0 +1,24 @@
+.home-t{
+    
+    position: absolute;
+    top: 20%;
+    left: 23%;
+    -webkit-text-stroke: 0.2vw snow;
+    
+
+}
+.home-t strong
+{
+    font-size: 100px;
+}
+.zwane
+{
+   
+    position: absolute ;
+    top: 100%;
+    left: 18%;
+    font-size: 50px;
+    /* color: darkgrey; */
+    -webkit-text-stroke: 0.1vw snow;
+
+}

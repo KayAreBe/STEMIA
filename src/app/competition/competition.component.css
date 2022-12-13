@@ -1,0 +1,58 @@
+.home{
+    background-image:url('\src\assets\img\competition.jpg') ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+}
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+} 
+
+.container
+{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 30px;
+    background: #fff;
+    box-sizing: border-box;
+    box-shadow: 0 15px 50px rgba(0, 0, 0,.2);
+}
+/* .circle img
+{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+} */
+
+.circle
+{
+    width: 200px;
+    height: 200px;
+    /* background-image:url('\src\assets\grp\mash.jpg') ; */
+    border-radius: 50%;
+    float: left;
+    shape-outside: circle() ;
+    margin: 60px 30px 30px 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+    line-height: 22px;
+}
+
+h1{
+    margin: 0 0 20px;
+    padding: 0;
+    font-size: 30px;
+}
+.sihle
+{
+    height: 80vh;
+}

@@ -1,0 +1,127 @@
+<nav class="navbar" style="background-color:rgb(0, 0, 0); height: 130px;" *ngIf="isLoggedIn$ | async as isLoggedIn">
+    <a class="navbar-brand" href="#">
+      <img src="/assets/img/new logo.jpeg" alt="" width="250" height="115">
+    </a>
+ <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+
+      <li class="nav-link px-2 ">
+        <a class="nav-link link-light" 
+          routerLink="/lhome"
+          routerLinkActive="active"
+          >HOME</a>
+      </li>
+
+      <li class="nav-link px-2 ">
+        <a class="nav-link link-light" 
+        routerLink="/contact-us"
+        routerLinkActive="active">CONTACT</a>
+      </li>
+
+      <li class="nav-link px-2 ">
+        <a class="nav-link link-light" 
+        routerLink="/about-us" 
+        routerLinkActive="active">ABOUT</a>
+      </li>
+      
+    <li class="nav-link px-2 ">
+      <a class="nav-link link-light" 
+      routerLink="/gallery"
+      routerLinkActive="active">GALLERY</a>
+    </li>
+
+    <li class="nav-link px-2 ">
+      <a class="nav-link link-light" 
+      routerLink="/guidelines"
+      routerLinkActive="active">FAQs</a>
+    </li>
+
+      <li class="nav-link px-2 ">
+        <a class="nav-link link-light" 
+        routerLink="/subevents" 
+        routerLinkActive="active">EVENTS</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           SUBJECTS
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" routerLink="/lifes"  routerLinkActive="active">Science</a></li>
+        <li><a class="dropdown-item" routerLink="/literacy"  routerLinkActive="active">Technology</a></li>
+        <li><a class="dropdown-item" routerLink="/physical"  routerLinkActive="active">Engineering</a></li>
+        <li><a class="dropdown-item" routerLink="/math"  routerLinkActive="active">Maths</a></li>
+        <li><a class="dropdown-item" routerLink="/inno"  routerLinkActive="active">Innovation</a></li>
+        <li><a class="dropdown-item" routerLink="/art"  routerLinkActive="active">Art</a></li>
+        
+         
+        </ul>
+      </li>
+      
+    <!-- </ul> -->
+ </ul>
+ <div class="sihle">
+  <ul>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <i class="bi bi-chat-fill"></i> <img src="assets\img\Mangethe.jpeg" alt="" height="50" width="50">
+      </a>
+      <ul class="dropdown-menu">
+          <li><a class="dropdown-item" routerLink="/picture"  routerLinkActive="active"><i class="bi bi-file-person-fill"></i>Profile</a></li>
+          <li><a class="dropdown-item" routerLink="/profile"  routerLinkActive="active"><i class="bi bi-grid-3x3"></i>Points</a></li>
+          <li><a class="dropdown-item" routerLink="/enginer"  routerLinkActive="active"><i class="bi bi-chat-fill"></i>Massages</a></li>
+        <!-- <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+      </ul>
+    </li>
+  </ul>
+ </div>
+ <div class="col-md-3 text-end">
+    <button type="button" 
+    class="btn btn-primary me-2" 
+    routerLink="/home-page" 
+    style="color: rgb(255, 255, 255);"
+    (click)="onLogout()" *ngIf="isLoggedIn"> Logout</button>
+  </div>
+ </nav>
+ <nav class="navbar" style="background-color:rgb(0, 0, 0); height: 130px;" *ngIf="!(isLoggedIn$ | async) as isLoggedIn">
+  <a class="navbar-brand" href="#">
+    <img src="/assets/img/new logo.jpeg" alt="" width="250" height="115">
+  </a>
+<ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+
+    <li class="nav-link px-2 ">
+      <a class="nav-link link-light" 
+        routerLink="/home-page"
+        routerLinkActive="active"
+        >HOME</a>
+    </li>
+
+    <li class="nav-link px-2 ">
+      <a class="nav-link link-light" 
+      routerLink="/about-us" 
+      routerLinkActive="active">ABOUT</a>
+    </li>
+
+    <li class="nav-link px-2 ">
+      <a class="nav-link link-light" 
+      routerLink="/contact-us"
+      routerLinkActive="active">CONTACT</a>
+    </li>
+
+    <li class="nav-link px-2 ">
+      <a class="nav-link link-light" 
+      routerLink="/gallery"
+      routerLinkActive="active">GALLERY</a>
+    </li>
+
+    <li class="nav-link px-2 ">
+      <a class="nav-link link-light" 
+      routerLink="/guidelines"
+      routerLinkActive="active">FAQs</a>
+    </li>
+
+
+</ul>
+<div class="col-md-3 text-end">
+  <button type="button" class="btn btn-primary me-2" routerLink="/login" style="color: rgb(255, 255, 255);"> Login</button>
+</div>
+</nav>

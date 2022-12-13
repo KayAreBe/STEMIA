@@ -1,0 +1,69 @@
+<app-navbar></app-navbar>
+<div class="sihle">
+    <div class="container">
+        <h1>Connect With Us</h1>
+        <p>We would love to respond to your queries and help you succeed. <br> feel freee to get in touch with us</p>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Send your request</h3>
+                    <!-- <form> -->
+    
+                        
+                        <div class="input-row">
+                            <div class="input-group">
+                               <label for="name">Name</label>
+                                <input type="text" [(ngModel)]="name" />
+                            </div>
+                            <div class="inout-group">
+                                <label>Phone</label>
+                                <input type="text"  [(ngModel)]="phone" >
+                            </div>
+    
+                        </div>
+    
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="text"   [(ngModel)]="email"/>
+                            </div>
+                            <div class="inout-group">
+                                <label>subject</label>
+                                <input type="text"  [(ngModel)]="sub" >
+                            </div>
+    
+                        </div>
+    
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Your Message"  [(ngModel)]="mas"></textarea>
+    
+                        <!-- <button type="submit">SEND</button> -->
+                       <div class="button">
+                        <input  type="button" value="SEND" (click)="CallSomelogic()">
+                       </div>
+                    <!-- </form> -->
+    
+            </div>
+            <div class="contact-right">
+                <h3>Reach Us</h3>
+    
+                <table>
+                   <tr>
+                    <td>Email</td>
+                    <td>general@STEMIA.com</td>
+                   </tr>
+    
+                   <tr>
+                    <td>Phone <br><br></td>
+                    <td>012-466-3522      Hours : 9am - 5am (SAT), Monday - Friday</td>
+
+                   </tr>
+    
+                   <tr>
+                    <td>Address</td>
+                    <td>PO Box 4522 Pretoria, 001</td>
+                   </tr>
+                </table>
+            </div><br>
+        </div>
+    </div>
+</div>
